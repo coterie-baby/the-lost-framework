@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Anonymous Pro', monospace;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (max-width: 420px) {
+  i {
+    display: inline !important;
+  }
+}
+
+.glitch {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  animation: glitch 1s infinite linear alternate-reverse;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 2px red, -2px -2px cyan; }
+  50% { text-shadow: -2px -2px red, 2px 2px cyan; }
+  100% { text-shadow: 2px -2px red, -2px 2px cyan; }
+}
+
+.hidden-message {
+  opacity: 0.05;
+  transition: opacity 0.5s ease-in-out;
+  text-transform: capitalize;
+}
+
+.hidden-message span::after {
+  content: "window";
+  color: white;
+  opacity: 0;
+}
+
+.hidden-message:hover {
+  opacity: 1;
+}
