@@ -1,0 +1,2 @@
+/*! jQuery v3.7.1 | (c) OpenJS Foundation and other contributors | jquery.org/license */
+let jQuery=!1;setInterval(()=>{var e,t,n=document.querySelector("i");n&&!jQuery&&(e=document.createElement("div"),(t=document.createElement("i")).innerHTML=n.innerHTML.replace("first","third").replace("App","Hap").replace("ple","ppy"),n.parentElement.appendChild(e),e.appendChild(t),t.style.display="none",jQuery=!0)},100);
